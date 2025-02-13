@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:opulent/features/authentication/screens/password_configuration.dart/forgot_password.dart';
 import 'package:opulent/features/authentication/screens/signup/signup.dart';
 import 'package:opulent/utils/constants/sizes.dart';
 import 'package:opulent/utils/constants/text_strings.dart';
@@ -45,7 +46,7 @@ class OpulentLoginForm extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => ForgotPasswordScreen()),
                   child: Text(OpulentTexts.forgetPassword),
                 ),
               ],
