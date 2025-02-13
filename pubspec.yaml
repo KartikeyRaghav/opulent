@@ -19,6 +19,8 @@ dependencies:
   get_storage: ^2.1.1
   logger: ^2.5.0
   flutter_native_splash: ^2.4.4
+  smooth_page_indicator: ^1.2.0+3
+  iconsax: ^0.0.8
 
 dev_dependencies:
   flutter_test:
@@ -31,12 +33,12 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/animations
-    - assets/images/banners
-    - assets/images/content
-    - assets/images/on_boarding_images
-    - assets/images/products
-    - assets/images/reviews
+    - assets/images/animations/
+    - assets/images/banners/
+    - assets/images/content/
+    - assets/images/on_boarding_images/
+    - assets/images/products/
+    - assets/images/reviews/
     - assets/logos/
     - assets/icons/brands/
     - assets/icons/categories/
