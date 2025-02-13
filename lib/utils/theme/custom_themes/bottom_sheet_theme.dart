@@ -1,4 +1,4 @@
-import 'package:bytecart/utils/constants/colors.dart';
+import 'package:opulent/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class BBottomSheetTheme {

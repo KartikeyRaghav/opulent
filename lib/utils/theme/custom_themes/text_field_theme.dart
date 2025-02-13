@@ -1,5 +1,5 @@
-import 'package:bytecart/utils/constants/colors.dart';
-import 'package:bytecart/utils/constants/sizes.dart';
+import 'package:opulent/utils/constants/colors.dart';
+import 'package:opulent/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class BTextFormFieldTheme {

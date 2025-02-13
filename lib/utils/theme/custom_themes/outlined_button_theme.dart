@@ -1,18 +1,21 @@
-import 'package:bytecart/utils/constants/colors.dart';
-import 'package:bytecart/utils/constants/sizes.dart';
+import 'package:opulent/utils/constants/colors.dart';
+import 'package:opulent/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class BOutlinedButtonTheme {
-  BOutlinedButtonTheme._(); 
+  BOutlinedButtonTheme._();
 
-  static final lightOutlinedButtonTheme  = OutlinedButtonThemeData(
+  static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
       foregroundColor: BColors.dark,
       side: const BorderSide(color: BColors.borderPrimary),
-      textStyle: const TextStyle(fontSize: 16, color: BColors.black, fontWeight: FontWeight.w600),
-      padding: const EdgeInsets.symmetric(vertical: BSizes.buttonHeight, horizontal: 20),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(BSizes.buttonRadius)),
+      textStyle: const TextStyle(
+          fontSize: 16, color: BColors.black, fontWeight: FontWeight.w600),
+      padding: const EdgeInsets.symmetric(
+          vertical: BSizes.buttonHeight, horizontal: 20),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(BSizes.buttonRadius)),
     ),
   );
 
@@ -20,9 +23,12 @@ class BOutlinedButtonTheme {
     style: OutlinedButton.styleFrom(
       foregroundColor: BColors.light,
       side: const BorderSide(color: BColors.borderPrimary),
-      textStyle: const TextStyle(fontSize: 16, color: BColors.textWhite, fontWeight: FontWeight.w600),
-      padding: const EdgeInsets.symmetric(vertical: BSizes.buttonHeight, horizontal: 20),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(BSizes.buttonRadius)),
+      textStyle: const TextStyle(
+          fontSize: 16, color: BColors.textWhite, fontWeight: FontWeight.w600),
+      padding: const EdgeInsets.symmetric(
+          vertical: BSizes.buttonHeight, horizontal: 20),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(BSizes.buttonRadius)),
     ),
   );
 }

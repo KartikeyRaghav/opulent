@@ -1,11 +1,11 @@
-import 'package:bytecart/utils/constants/colors.dart';
-import 'package:bytecart/utils/constants/sizes.dart';
+import 'package:opulent/utils/constants/colors.dart';
+import 'package:opulent/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class BElevatedButtonTheme {
   BElevatedButtonTheme._();
 
-  static final lightElevatedButtonTheme  = ElevatedButtonThemeData(
+  static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
       foregroundColor: BColors.light,
@@ -14,8 +14,10 @@ class BElevatedButtonTheme {
       disabledBackgroundColor: BColors.buttonDisabled,
       side: const BorderSide(color: BColors.primary),
       padding: const EdgeInsets.symmetric(vertical: BSizes.buttonHeight),
-      textStyle: const TextStyle(fontSize: 16, color: BColors.textWhite, fontWeight: FontWeight.w600),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(BSizes.buttonRadius)),
+      textStyle: const TextStyle(
+          fontSize: 16, color: BColors.textWhite, fontWeight: FontWeight.w600),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(BSizes.buttonRadius)),
     ),
   );
 
@@ -28,8 +30,10 @@ class BElevatedButtonTheme {
       disabledBackgroundColor: BColors.darkerGrey,
       side: const BorderSide(color: BColors.primary),
       padding: const EdgeInsets.symmetric(vertical: BSizes.buttonHeight),
-      textStyle: const TextStyle(fontSize: 16, color: BColors.textWhite, fontWeight: FontWeight.w600),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(BSizes.buttonRadius)),
+      textStyle: const TextStyle(
+          fontSize: 16, color: BColors.textWhite, fontWeight: FontWeight.w600),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(BSizes.buttonRadius)),
     ),
   );
 }

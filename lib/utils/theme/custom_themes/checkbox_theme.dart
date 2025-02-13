@@ -1,12 +1,13 @@
-import 'package:bytecart/utils/constants/colors.dart';
-import 'package:bytecart/utils/constants/sizes.dart';
+import 'package:opulent/utils/constants/colors.dart';
+import 'package:opulent/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class BCheckboxTheme {
   BCheckboxTheme._();
 
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(BSizes.xs)),
+    shape:
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(BSizes.xs)),
     checkColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
         return BColors.white;
@@ -24,7 +25,8 @@ class BCheckboxTheme {
   );
 
   static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(BSizes.xs)),
+    shape:
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(BSizes.xs)),
     checkColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
         return BColors.white;
