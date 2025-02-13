@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BTextTheme {
-  BTextTheme._();
+class OpulentTextTheme {
+  OpulentTextTheme._();
 
   static TextTheme lightTextTheme = TextTheme(
     headlineLarge: const TextStyle().copyWith(

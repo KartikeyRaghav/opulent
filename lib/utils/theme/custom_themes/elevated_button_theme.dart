@@ -2,38 +2,38 @@ import 'package:opulent/utils/constants/colors.dart';
 import 'package:opulent/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class BElevatedButtonTheme {
-  BElevatedButtonTheme._();
+class OpulentElevatedButtonTheme {
+  OpulentElevatedButtonTheme._();
 
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: BColors.light,
-      backgroundColor: BColors.primary,
-      disabledForegroundColor: BColors.darkGrey,
-      disabledBackgroundColor: BColors.buttonDisabled,
-      side: const BorderSide(color: BColors.primary),
-      padding: const EdgeInsets.symmetric(vertical: BSizes.buttonHeight),
+      foregroundColor: OpulentColors.light,
+      backgroundColor: OpulentColors.primary,
+      disabledForegroundColor: OpulentColors.darkGrey,
+      disabledBackgroundColor: OpulentColors.buttonDisabled,
+      side: const BorderSide(color: OpulentColors.primary),
+      padding: const EdgeInsets.symmetric(vertical: OpulentSizes.buttonHeight),
       textStyle: const TextStyle(
-          fontSize: 16, color: BColors.textWhite, fontWeight: FontWeight.w600),
+          fontSize: 16, color: OpulentColors.textWhite, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(BSizes.buttonRadius)),
+          borderRadius: BorderRadius.circular(OpulentSizes.buttonRadius)),
     ),
   );
 
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: BColors.light,
-      backgroundColor: BColors.primary,
-      disabledForegroundColor: BColors.darkGrey,
-      disabledBackgroundColor: BColors.darkerGrey,
-      side: const BorderSide(color: BColors.primary),
-      padding: const EdgeInsets.symmetric(vertical: BSizes.buttonHeight),
+      foregroundColor: OpulentColors.light,
+      backgroundColor: OpulentColors.primary,
+      disabledForegroundColor: OpulentColors.darkGrey,
+      disabledBackgroundColor: OpulentColors.darkerGrey,
+      side: const BorderSide(color: OpulentColors.primary),
+      padding: const EdgeInsets.symmetric(vertical: OpulentSizes.buttonHeight),
       textStyle: const TextStyle(
-          fontSize: 16, color: BColors.textWhite, fontWeight: FontWeight.w600),
+          fontSize: 16, color: OpulentColors.textWhite, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(BSizes.buttonRadius)),
+          borderRadius: BorderRadius.circular(OpulentSizes.buttonRadius)),
     ),
   );
 }

@@ -1,8 +1,6 @@
-class BImages {
-  static const String darkAppLogo =
-      "assets/logos/t-store-splash-logo-black.png";
-  static const String lightAppLogo =
-      "assets/logos/t-store-splash-logo-white.png";
+class OpulentImages {
+  static const String darkAppLogo = "assets/logos/logo_dark.png";
+  static const String lightAppLogo = "assets/logos/logo_light.png";
 
   static const String google = "assets/logos/google-icon.png";
   static const String facebook = "assets/logos/facebook-icon.png";

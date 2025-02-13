@@ -1,13 +1,13 @@
 import 'package:get_storage/get_storage.dart';
 
-class BLocalStorage {
-  static final BLocalStorage _instance = BLocalStorage._internal();
+class OpulentLocalStorage {
+  static final OpulentLocalStorage _instance = OpulentLocalStorage._internal();
 
-  factory BLocalStorage() {
+  factory OpulentLocalStorage() {
     return _instance;
   }
 
-  BLocalStorage._internal();
+  OpulentLocalStorage._internal();
 
   final _storage = GetStorage();
 

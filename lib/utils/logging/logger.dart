@@ -1,6 +1,6 @@
 import 'package:logger/logger.dart';
 
-class BLoggerHelper {
+class OpulentLoggerHelper {
   static final Logger _logger = Logger(
     printer: PrettyPrinter(),
     level: Level.debug,

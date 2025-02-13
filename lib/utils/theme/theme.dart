@@ -8,8 +8,8 @@ import 'package:opulent/utils/theme/custom_themes/text_field_theme.dart';
 import 'package:opulent/utils/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 
-class BAppTheme {
-  BAppTheme._();
+class OpulentAppTheme {
+  OpulentAppTheme._();
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
@@ -17,14 +17,14 @@ class BAppTheme {
     brightness: Brightness.light,
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
-    textTheme: BTextTheme.lightTextTheme,
-    chipTheme: BChipTheme.lightChipTheme,
-    bottomSheetTheme: BBottomSheetTheme.lightBottomSheetTheme,
-    appBarTheme: BAppBarTheme.lightAppBarTheme,
-    checkboxTheme: BCheckboxTheme.lightCheckboxTheme,
-    outlinedButtonTheme: BOutlinedButtonTheme.lightOutlinedButtonTheme,
-    inputDecorationTheme: BTextFormFieldTheme.lightInputDecorationTheme,
-    elevatedButtonTheme: BElevatedButtonTheme.lightElevatedButtonTheme,
+    textTheme: OpulentTextTheme.lightTextTheme,
+    chipTheme: OpulentChipTheme.lightChipTheme,
+    bottomSheetTheme: OpulentBottomSheetTheme.lightBottomSheetTheme,
+    appBarTheme: OpulentAppBarTheme.lightAppBarTheme,
+    checkboxTheme: OpulentCheckboxTheme.lightCheckboxTheme,
+    outlinedButtonTheme: OpulentOutlinedButtonTheme.lightOutlinedButtonTheme,
+    inputDecorationTheme: OpulentTextFormFieldTheme.lightInputDecorationTheme,
+    elevatedButtonTheme: OpulentElevatedButtonTheme.lightElevatedButtonTheme,
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
@@ -32,13 +32,13 @@ class BAppTheme {
     brightness: Brightness.dark,
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.black,
-    textTheme: BTextTheme.darkTextTheme,
-    chipTheme: BChipTheme.darkChipTheme,
-    bottomSheetTheme: BBottomSheetTheme.darkBottomSheetTheme,
-    appBarTheme: BAppBarTheme.darkAppBarTheme,
-    checkboxTheme: BCheckboxTheme.darkCheckboxTheme,
-    outlinedButtonTheme: BOutlinedButtonTheme.darkOutlinedButtonTheme,
-    inputDecorationTheme: BTextFormFieldTheme.darkInputDecorationTheme,
-    elevatedButtonTheme: BElevatedButtonTheme.darkElevatedButtonTheme,
+    textTheme: OpulentTextTheme.darkTextTheme,
+    chipTheme: OpulentChipTheme.darkChipTheme,
+    bottomSheetTheme: OpulentBottomSheetTheme.darkBottomSheetTheme,
+    appBarTheme: OpulentAppBarTheme.darkAppBarTheme,
+    checkboxTheme: OpulentCheckboxTheme.darkCheckboxTheme,
+    outlinedButtonTheme: OpulentOutlinedButtonTheme.darkOutlinedButtonTheme,
+    inputDecorationTheme: OpulentTextFormFieldTheme.darkInputDecorationTheme,
+    elevatedButtonTheme: OpulentElevatedButtonTheme.darkElevatedButtonTheme,
   );
 }

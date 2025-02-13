@@ -1,4 +1,4 @@
-class BTexts {
+class OpulentTexts {
   static const String and = "and";
   static const String skip = "Skip";
   static const String done = "Done";

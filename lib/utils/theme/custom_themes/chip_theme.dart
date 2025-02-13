@@ -1,22 +1,22 @@
 import 'package:opulent/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
-class BChipTheme {
-  BChipTheme._();
+class OpulentChipTheme {
+  OpulentChipTheme._();
 
   static ChipThemeData lightChipTheme = ChipThemeData(
-    disabledColor: BColors.grey.withOpacity(0.4),
-    labelStyle: const TextStyle(color: BColors.black),
-    selectedColor: BColors.primary,
+    disabledColor: OpulentColors.grey.withOpacity(0.4),
+    labelStyle: const TextStyle(color: OpulentColors.black),
+    selectedColor: OpulentColors.primary,
     padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
-    checkmarkColor: BColors.white,
+    checkmarkColor: OpulentColors.white,
   );
 
   static ChipThemeData darkChipTheme = const ChipThemeData(
-    disabledColor: BColors.darkerGrey,
-    labelStyle: TextStyle(color: BColors.white),
-    selectedColor: BColors.primary,
+    disabledColor: OpulentColors.darkerGrey,
+    labelStyle: TextStyle(color: OpulentColors.white),
+    selectedColor: OpulentColors.primary,
     padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
-    checkmarkColor: BColors.white,
+    checkmarkColor: OpulentColors.white,
   );
 }

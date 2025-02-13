@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-class BHttpHelper {
+class OpulentHttpHelper {
   static const String _baseUrl =
       'https://your-api-base-url.com'; // Replace with your API base URL
 

@@ -1,4 +1,4 @@
-class BPricingCalculator {
+class OpulentPricingCalculator {
   static double calculateTotalPrice(double productPrice, String location) {
     double taxRate = getTaxRateForLocation(location);
     double taxAmount = productPrice * taxRate;

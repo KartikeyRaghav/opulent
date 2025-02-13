@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class BColors {
+class OpulentColors {
   static const Color primary = Color(0xFF4b68ff);
   static const Color secondary = Color(0xFFFFE24B);
   static const Color accent = Color(0xFFb0c7ff);
@@ -14,7 +14,7 @@ class BColors {
   static const Color primaryBackground = Color(0xFFF3F5FF);
 
   static const Color lightContainer = Color(0xFFF6F6F6);
-  static Color darkContainer = BColors.white.withOpacity(0.1);
+  static Color darkContainer = OpulentColors.white.withOpacity(0.1);
 
   static const Color buttonPrimary = Color(0xFF4b68ff);
   static const Color buttonSecondary = Color(0xFF6C757D);

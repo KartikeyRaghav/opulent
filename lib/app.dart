@@ -8,8 +8,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.system,
-      theme: BAppTheme.lightTheme,
-      darkTheme: BAppTheme.darkTheme,
+      theme: OpulentAppTheme.lightTheme,
+      darkTheme: OpulentAppTheme.darkTheme,
     );
   }
 }
