@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:opulent/features/authentication/screens/signup/signup.dart';
 import 'package:opulent/utils/constants/sizes.dart';
 import 'package:opulent/utils/constants/text_strings.dart';
 
@@ -25,6 +27,7 @@ class OpulentLoginForm extends StatelessWidget {
             ),
             SizedBox(height: OpulentSizes.spaceBtwInputFields),
             TextFormField(
+              obscureText: true,
               decoration: InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
                 labelText: OpulentTexts.password,
@@ -59,7 +62,7 @@ class OpulentLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(SignUpScreen()),
                 child: Text(OpulentTexts.createAccount),
               ),
             ),
