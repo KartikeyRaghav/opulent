@@ -9,6 +9,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
       theme: OpulentAppTheme.lightTheme,
       darkTheme: OpulentAppTheme.darkTheme,

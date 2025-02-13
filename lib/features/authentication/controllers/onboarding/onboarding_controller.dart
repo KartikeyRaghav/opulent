@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+import 'package:opulent/features/authentication/screens/login/login.dart';
 
 class OnboardingController extends GetxController {
   static OnboardingController get instance => Get.find();
@@ -16,7 +17,7 @@ class OnboardingController extends GetxController {
 
   void nextPage() {
     if (currentPageIndex.value == 2) {
-      // Get.to(LoginScreen());
+      Get.offAll(LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
