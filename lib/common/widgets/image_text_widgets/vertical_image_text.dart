@@ -9,7 +9,7 @@ class OpulentVerticalImageText extends StatelessWidget {
     required this.image,
     required this.title,
     this.textColor = OpulentColors.white,
-    this.backgroundColor = OpulentColors.white,
+    this.backgroundColor,
     this.onTap,
   });
 

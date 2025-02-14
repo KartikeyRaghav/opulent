@@ -96,39 +96,41 @@ class OpulentProductCardVertical extends StatelessWidget {
                       ),
                     ],
                   ),
-                  // Spacer(),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      OpulentProductPriceText(
-                        price: '35',
-                        isLarge: true,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: OpulentColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(OpulentSizes.cardRadiusMd),
-                            bottomRight: Radius.circular(
-                              OpulentSizes.productImageRadius,
-                            ),
-                          ),
-                        ),
-                        child: SizedBox(
-                          width: OpulentSizes.iconLg * 1.2,
-                          height: OpulentSizes.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(
-                              Iconsax.add,
-                              color: OpulentColors.white,
-                            ),
-                          ),
-                        ),
-                      )
-                    ],
-                  )
                 ],
               ),
+            ),
+            Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: OpulentSizes.sm),
+                  child: OpulentProductPriceText(
+                    price: '3500',
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: OpulentColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(OpulentSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(
+                        OpulentSizes.productImageRadius,
+                      ),
+                    ),
+                  ),
+                  child: SizedBox(
+                    width: OpulentSizes.iconLg * 1.2,
+                    height: OpulentSizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(
+                        Iconsax.add,
+                        color: OpulentColors.white,
+                      ),
+                    ),
+                  ),
+                )
+              ],
             )
           ],
         ),

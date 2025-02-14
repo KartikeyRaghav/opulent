@@ -57,6 +57,8 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: OpulentSizes.spaceBtwSections),
+                  OpulentSectionHeading(title: 'Popular Products', onPressed: (){},),
+                  SizedBox(height: OpulentSizes.spaceBtwSections),
                   OpulentGridLayout(
                     itemCount: 4,
                     itemBuilder: (_, index) => OpulentProductCardVertical(),

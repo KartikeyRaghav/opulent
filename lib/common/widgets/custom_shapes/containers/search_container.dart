@@ -33,7 +33,7 @@ class OpulentSearchContainer extends StatelessWidget {
           decoration: BoxDecoration(
             color: showBackground
                 ? dark
-                    ? OpulentColors.white
+                    ? OpulentColors.black
                     : OpulentColors.white
                 : Colors.transparent,
             borderRadius: BorderRadius.circular(OpulentSizes.cardRadiusLg),
