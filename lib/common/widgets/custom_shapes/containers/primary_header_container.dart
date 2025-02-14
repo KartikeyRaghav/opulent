@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:opulent/common/widgets/custom_shapes/container/circular_container.dart';
+import 'package:opulent/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:opulent/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
 import 'package:opulent/utils/constants/colors.dart';
 

@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:opulent/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:opulent/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:opulent/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:opulent/common/widgets/images/rounded_image.dart';
 import 'package:opulent/common/widgets/texts/section_heading.dart';
 import 'package:opulent/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:opulent/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:opulent/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:opulent/utils/constants/colors.dart';
+import 'package:opulent/utils/constants/image_strings.dart';
 import 'package:opulent/utils/constants/sizes.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -40,6 +45,16 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            Padding(
+              padding: EdgeInsets.all(OpulentSizes.defaultSpace),
+              child: OpulentPromoSlider(
+                banners: [
+                  OpulentImages.promoBanner1,
+                  OpulentImages.promoBanner2,
+                  OpulentImages.promoBanner3,
+                ],
+              ),
+            )
           ],
         ),
       ),
