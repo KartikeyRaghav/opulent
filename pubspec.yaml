@@ -22,6 +22,7 @@ dependencies:
   smooth_page_indicator: ^1.2.0+3
   iconsax: ^0.0.8
   carousel_slider: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
 
 dev_dependencies:
   flutter_test:
@@ -63,3 +64,8 @@ flutter:
           weight: 600
         - asset: assets/fonts/Poppins-Bold.ttf
           weight: 800
+
+flutter_icons:
+  android: 'launcher_icon'
+  ios: true
+  image_path: 'assets/logos/logo_back_dark.png'
