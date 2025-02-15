@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/get_core.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:opulent/common/styles/shadows.dart';
 import 'package:opulent/common/widgets/custom_shapes/containers/rounded_container.dart';
@@ -7,6 +9,7 @@ import 'package:opulent/common/widgets/images/rounded_image.dart';
 import 'package:opulent/common/widgets/texts/brand_title_verified_icon.dart';
 import 'package:opulent/common/widgets/texts/product_price_text.dart';
 import 'package:opulent/common/widgets/texts/product_title_text.dart';
+import 'package:opulent/features/shop/screens/product_details/product_detail.dart';
 import 'package:opulent/utils/constants/colors.dart';
 import 'package:opulent/utils/constants/image_strings.dart';
 import 'package:opulent/utils/constants/sizes.dart';
@@ -20,7 +23,7 @@ class OpulentProductCardVertical extends StatelessWidget {
     final dark = OpulentHelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => ProductDetailScreen()),
       child: Container(
         width: 180,
         padding: EdgeInsets.all(1),

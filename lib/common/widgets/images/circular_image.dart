@@ -39,7 +39,7 @@ class OpulentCircularImage extends StatelessWidget {
         image: isNetworkImage
             ? NetworkImage(image)
             : AssetImage(image) as ImageProvider,
-        color: overlayColor,
+        color: overlayColor ?? (dark ? OpulentColors.white : OpulentColors.black),
       ),
     );
   }
