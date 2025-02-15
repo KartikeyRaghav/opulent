@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:opulent/common/widgets/appbar/appbar.dart';
 import 'package:opulent/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:opulent/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:opulent/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:opulent/common/widgets/texts/section_heading.dart';
+import 'package:opulent/features/personalisation/screens/profile/profile.dart';
 import 'package:opulent/utils/constants/colors.dart';
 import 'package:opulent/utils/constants/sizes.dart';
 
@@ -20,7 +22,7 @@ class SettingsScreen extends StatelessWidget {
             OpulentPrimaryHeaderContainer(
               child: Column(
                 children: [
-                  OpulentCustomAppbar(
+                  OpulentAppbar(
                     title: Text(
                       'Account',
                       style: Theme.of(context)
@@ -29,7 +31,9 @@ class SettingsScreen extends StatelessWidget {
                           .apply(color: OpulentColors.white),
                     ),
                   ),
-                  OpulentUserProfileTile(),
+                  OpulentUserProfileTile(
+                    onPressed: () => Get.to(() => ProfileScreen()),
+                  ),
                   SizedBox(height: OpulentSizes.spaceBtwSections),
                 ],
               ),

@@ -14,7 +14,7 @@ class WishListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: OpulentCustomAppbar(
+      appBar: OpulentAppbar(
         title: Text(
           'Wishlist',
           style: Theme.of(context).textTheme.headlineMedium,

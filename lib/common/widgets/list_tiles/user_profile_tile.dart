@@ -7,7 +7,10 @@ import 'package:opulent/utils/constants/image_strings.dart';
 class OpulentUserProfileTile extends StatelessWidget {
   const OpulentUserProfileTile({
     super.key,
+    required this.onPressed,
   });
+
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +36,7 @@ class OpulentUserProfileTile extends StatelessWidget {
             .apply(color: OpulentColors.white),
       ),
       trailing: IconButton(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: Icon(Iconsax.edit, color: OpulentColors.white),
       ),
     );

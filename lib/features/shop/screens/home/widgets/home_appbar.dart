@@ -11,7 +11,7 @@ class OpulentHomeAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OpulentCustomAppbar(
+    return OpulentAppbar(
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -23,10 +23,9 @@ class OpulentHomeAppBar extends StatelessWidget {
           ),
           Text(
             OpulentTexts.homeAppbarSubTitle,
-            style:
-                Theme.of(context).textTheme.headlineSmall!.apply(
-                      color: OpulentColors.white,
-                    ),
+            style: Theme.of(context).textTheme.headlineSmall!.apply(
+                  color: OpulentColors.white,
+                ),
           )
         ],
       ),

@@ -4,9 +4,8 @@ import 'package:iconsax/iconsax.dart';
 import 'package:opulent/utils/constants/sizes.dart';
 import 'package:opulent/utils/device/device_utility.dart';
 
-class OpulentCustomAppbar extends StatelessWidget
-    implements PreferredSizeWidget {
-  const OpulentCustomAppbar(
+class OpulentAppbar extends StatelessWidget implements PreferredSizeWidget {
+  const OpulentAppbar(
       {super.key,
       this.title,
       this.showBackArrow = false,
