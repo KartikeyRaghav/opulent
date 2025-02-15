@@ -4,6 +4,7 @@ import 'package:opulent/common/styles/shadows.dart';
 import 'package:opulent/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:opulent/common/widgets/icons/circular_icon.dart';
 import 'package:opulent/common/widgets/images/rounded_image.dart';
+import 'package:opulent/common/widgets/texts/brand_title_verified_icon.dart';
 import 'package:opulent/common/widgets/texts/product_price_text.dart';
 import 'package:opulent/common/widgets/texts/product_title_text.dart';
 import 'package:opulent/utils/constants/colors.dart';
@@ -80,22 +81,7 @@ class OpulentProductCardVertical extends StatelessWidget {
                     smallSize: true,
                   ),
                   SizedBox(height: OpulentSizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        'Nike',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      SizedBox(width: OpulentSizes.sm),
-                      Icon(
-                        Iconsax.verify5,
-                        color: OpulentColors.primary,
-                        size: OpulentSizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  OpulentBrandTitleWithVerifiedIcon(title: 'Nike'),
                 ],
               ),
             ),

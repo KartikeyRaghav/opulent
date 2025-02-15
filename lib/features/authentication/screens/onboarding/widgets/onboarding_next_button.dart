@@ -4,7 +4,6 @@ import 'package:opulent/features/authentication/controllers/onboarding/onboardin
 import 'package:opulent/utils/constants/colors.dart';
 import 'package:opulent/utils/constants/sizes.dart';
 import 'package:opulent/utils/device/device_utility.dart';
-import 'package:opulent/utils/helpers/helper_functions.dart';
 
 class OnBoardingNextButton extends StatelessWidget {
   const OnBoardingNextButton({
@@ -13,16 +12,17 @@ class OnBoardingNextButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = OpulentHelperFunctions.isDarkMode(context);
     return Positioned(
       right: OpulentSizes.defaultSpace,
       bottom: OpulentDeviceUtils.getBottomNavigationBarHeight(),
       child: ElevatedButton(
         onPressed: () => OnboardingController.instance.nextPage(),
         style: ElevatedButton.styleFrom(
-            shape: CircleBorder(),
-            backgroundColor: dark ? OpulentColors.primary : Colors.black),
-        child: Icon(Iconsax.arrow_right_3),
+            shape: CircleBorder(), backgroundColor: OpulentColors.primary),
+        child: Icon(
+          Iconsax.arrow_right_3,
+          color: OpulentColors.white,
+        ),
       ),
     );
   }

@@ -13,12 +13,15 @@ class OpulentSearchContainer extends StatelessWidget {
     this.showBorder = true,
     this.showBackground = true,
     this.onTap,
+    this.padding =
+        const EdgeInsets.symmetric(horizontal: OpulentSizes.defaultSpace),
   });
 
   final String text;
   final IconData? icon;
   final bool showBorder, showBackground;
   final VoidCallback? onTap;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +29,7 @@ class OpulentSearchContainer extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: OpulentSizes.defaultSpace),
+        padding: padding,
         child: Container(
           width: OpulentDeviceUtils.getScreenWidth(context),
           padding: EdgeInsets.all(OpulentSizes.md),
