@@ -16,7 +16,6 @@ class StoreScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return DefaultTabController(
       length: 5,
       child: Scaffold(
@@ -37,7 +36,7 @@ class StoreScreen extends StatelessWidget {
                 backgroundColor: OpulentHelperFunctions.isDarkMode(context)
                     ? OpulentColors.black
                     : OpulentColors.white,
-                expandedHeight: 440,
+                expandedHeight: 400,
                 flexibleSpace: Padding(
                   padding: EdgeInsets.all(OpulentSizes.defaultSpace),
                   child: ListView(

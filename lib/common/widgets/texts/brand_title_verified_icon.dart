@@ -28,20 +28,24 @@ class OpulentBrandTitleWithVerifiedIcon extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Flexible(
-          child: OpulentBrandTitleText(
-            title: title,
-            color: textColor,
-            maxLines: maxLines,
-            textAlign: textAlign,
-            brandTextSize: brandTextSize,
+          child: Row(
+            children: [
+              OpulentBrandTitleText(
+                title: title,
+                color: textColor,
+                maxLines: maxLines,
+                textAlign: textAlign,
+                brandTextSize: brandTextSize,
+              ),
+              SizedBox(width: OpulentSizes.xs),
+              Icon(
+                Iconsax.verify5,
+                color: iconColor,
+                size: OpulentSizes.iconXs,
+              )
+            ],
           ),
         ),
-        SizedBox(width: OpulentSizes.xs),
-        Icon(
-          Iconsax.verify5,
-          color: iconColor,
-          size: OpulentSizes.iconXs,
-        )
       ],
     );
   }

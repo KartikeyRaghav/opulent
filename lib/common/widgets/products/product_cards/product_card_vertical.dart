@@ -32,7 +32,7 @@ class OpulentProductCardVertical extends StatelessWidget {
         child: Column(
           children: [
             OpulentRoundedContainer(
-              height: 180,
+              height: 165,
               padding: EdgeInsets.all(OpulentSizes.sm),
               backgroundColor: dark ? OpulentColors.dark : OpulentColors.light,
               child: Stack(
@@ -73,16 +73,19 @@ class OpulentProductCardVertical extends StatelessWidget {
             SizedBox(height: OpulentSizes.spaceBtwItems / 2),
             Padding(
               padding: EdgeInsets.only(left: OpulentSizes.sm),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  OpulentProductTitleText(
-                    title: 'Green Nike Air Shoes',
-                    smallSize: true,
-                  ),
-                  SizedBox(height: OpulentSizes.spaceBtwItems / 2),
-                  OpulentBrandTitleWithVerifiedIcon(title: 'Nike'),
-                ],
+              child: SizedBox(
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    OpulentProductTitleText(
+                      title: 'Green Nike Air Shoes',
+                      smallSize: true,
+                    ),
+                    SizedBox(height: OpulentSizes.spaceBtwItems / 2),
+                    OpulentBrandTitleWithVerifiedIcon(title: 'Nike'),
+                  ],
+                ),
               ),
             ),
             Spacer(),

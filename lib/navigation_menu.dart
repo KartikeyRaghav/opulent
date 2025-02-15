@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:opulent/features/shop/screens/home/home.dart';
 import 'package:opulent/features/shop/screens/store/store.dart';
+import 'package:opulent/features/shop/screens/wishlist/wishlist.dart';
 import 'package:opulent/utils/constants/colors.dart';
 import 'package:opulent/utils/helpers/helper_functions.dart';
 
@@ -44,7 +45,7 @@ class NavigationController extends GetxController {
   final screens = [
     HomeScreen(),
     StoreScreen(),
-    Container(color: Colors.red),
+    WishListScreen(),
     Container(color: Colors.yellow),
   ];
 }
