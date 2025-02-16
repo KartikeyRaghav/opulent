@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:opulent/features/authentication/screens/signup/verif_email.dart';
+import 'package:opulent/features/authentication/controllers/signup/signup_controller.dart';
 import 'package:opulent/utils/constants/colors.dart';
 import 'package:opulent/utils/constants/sizes.dart';
 import 'package:opulent/utils/constants/text_strings.dart';
+import 'package:opulent/utils/validators/validation.dart';
 
 class SignUpForm extends StatelessWidget {
   const SignUpForm({
@@ -16,7 +17,9 @@ class SignUpForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(SignupController());
     return Form(
+      key: controller.signupFormKey,
       child: Column(
         children: [
           Row(
@@ -24,6 +27,9 @@ class SignUpForm extends StatelessWidget {
               Expanded(
                 child: TextFormField(
                   expands: false,
+                  controller: controller.firstName,
+                  validator: (value) =>
+                      OpulentValidator.validateEmptyText('First Name', value),
                   decoration: InputDecoration(
                     labelText: OpulentTexts.firstName,
                     prefixIcon: Icon(Iconsax.user),
@@ -34,6 +40,9 @@ class SignUpForm extends StatelessWidget {
               Expanded(
                 child: TextFormField(
                   expands: false,
+                  controller: controller.lastName,
+                  validator: (value) =>
+                      OpulentValidator.validateEmptyText('Last Name', value),
                   decoration: InputDecoration(
                     labelText: OpulentTexts.lastName,
                     prefixIcon: Icon(Iconsax.user),
@@ -44,6 +53,9 @@ class SignUpForm extends StatelessWidget {
           ),
           SizedBox(height: OpulentSizes.spaceBtwInputFields),
           TextFormField(
+            controller: controller.username,
+            validator: (value) =>
+                OpulentValidator.validateEmptyText('Username', value),
             decoration: InputDecoration(
               labelText: OpulentTexts.username,
               prefixIcon: Icon(Iconsax.user_edit),
@@ -51,6 +63,8 @@ class SignUpForm extends StatelessWidget {
           ),
           SizedBox(height: OpulentSizes.spaceBtwInputFields),
           TextFormField(
+            controller: controller.email,
+            validator: (value) => OpulentValidator.validateEmail(value),
             decoration: InputDecoration(
               labelText: OpulentTexts.email,
               prefixIcon: Icon(Iconsax.direct),
@@ -58,25 +72,42 @@ class SignUpForm extends StatelessWidget {
           ),
           SizedBox(height: OpulentSizes.spaceBtwInputFields),
           TextFormField(
+            controller: controller.phoneNumber,
+            validator: (value) => OpulentValidator.validatePhoneNumber(value),
             decoration: InputDecoration(
               labelText: OpulentTexts.phoneNo,
               prefixIcon: Icon(Iconsax.call),
             ),
           ),
           SizedBox(height: OpulentSizes.spaceBtwInputFields),
-          TextFormField(
-            obscureText: true,
-            decoration: InputDecoration(
-              labelText: OpulentTexts.password,
-              prefixIcon: Icon(Iconsax.password_check),
-              suffixIcon: Icon(Iconsax.eye_slash),
+          Obx(
+            () => TextFormField(
+              obscureText: controller.hidePassword.value,
+              controller: controller.password,
+              validator: (value) => OpulentValidator.validatePassword(value),
+              decoration: InputDecoration(
+                labelText: OpulentTexts.password,
+                prefixIcon: Icon(Iconsax.password_check),
+                suffixIcon: IconButton(
+                  onPressed: () => controller.hidePassword.value =
+                      !controller.hidePassword.value,
+                  icon: Icon(controller.hidePassword.value
+                      ? Iconsax.eye_slash
+                      : Iconsax.eye),
+                ),
+              ),
             ),
           ),
           SizedBox(height: OpulentSizes.spaceBtwSections),
           Row(
             children: [
               SizedBox(
-                child: Checkbox(value: true, onChanged: (value) {}),
+                child: Obx(
+                  () => Checkbox(
+                      value: controller.privacyPolicy.value,
+                      onChanged: (value) => controller.privacyPolicy.value =
+                          !controller.privacyPolicy.value),
+                ),
               ),
               SizedBox(width: OpulentSizes.spaceBtwItems),
               Column(
@@ -130,7 +161,7 @@ class SignUpForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () => Get.to(VerifyEmailScreen()),
+              onPressed: () => controller.signup(),
               child: Text(OpulentTexts.createAccount),
             ),
           ),
