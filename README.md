@@ -1,16 +1,43 @@
-# opulent
+# Opulent - Flutter E-Commerce App
 
-A new Flutter project.
+Opulent is a beautifully designed e-commerce application built using Flutter. The app features a complete UI for seamless shopping experiences but currently lacks functionality due to time constraints.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Onboarding Screens - A smooth introduction to the app.
+- Authentication - Login and Signup screens for user access.
+- Home Screen - Displays featured products and categories.
+- Store Screen - Browse products by categories.
+- Wishlist - Save favorite products for later.
+- Product Detail Screen - View detailed information about a product.
+- Cart Screen - Add and manage products before checkout.
+- Profile & Settings - Manage user details and preferences.
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter - Cross-platform UI development.
+- Dart - Programming language for Flutter.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+
+- Clone the repository:
+  git clone https://github.com/KartikeyRaghav/opulent.git
+
+- Navigate to the project folder:
+  cd opulent
+
+- Install dependencies:
+  flutter pub get
+
+- Run the app:
+  flutter run
+
+## Screenshots
+
+![image](/screenshots/Screenshot_2025-02-16-23-48-12-086_com.kartikeyraghav.opulent.jpg?raw=true)
+
+## Future Enhancements
+
+- Implement backend functionality for authentication and data management.
+- Integrate payment gateway for seamless transactions.
+- Add push notifications and user engagement features.
