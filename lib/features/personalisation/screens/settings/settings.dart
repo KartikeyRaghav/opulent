@@ -8,6 +8,8 @@ import 'package:opulent/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:opulent/common/widgets/texts/section_heading.dart';
 import 'package:opulent/features/personalisation/screens/address/address.dart';
 import 'package:opulent/features/personalisation/screens/profile/profile.dart';
+import 'package:opulent/features/shop/screens/cart/cart.dart';
+import 'package:opulent/features/shop/screens/orders/orders.dart';
 import 'package:opulent/utils/constants/colors.dart';
 import 'package:opulent/utils/constants/sizes.dart';
 
@@ -58,13 +60,13 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.shopping_cart,
                     title: 'My Cart',
                     subTitle: 'Add, remove products and move to checkout',
-                    onTap: () {},
+                    onTap: () => Get.to(() => CartScreen()),
                   ),
                   OpulentSettingMenuTile(
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subTitle: 'In-progress and completed orders',
-                    onTap: () {},
+                    onTap: () => Get.to(() => OrderScreen()),
                   ),
                   OpulentSettingMenuTile(
                     icon: Iconsax.bank,
