@@ -69,7 +69,7 @@ class OpulentProductCardVertical extends StatelessWidget {
                       icon: Iconsax.heart5,
                       color: Colors.red,
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -121,7 +121,7 @@ class OpulentProductCardVertical extends StatelessWidget {
                       ),
                     ),
                   ),
-                )
+                ),
               ],
             )
           ],
