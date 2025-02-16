@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "405589142150",
+    "project_id": "k-opulent",
+    "storage_bucket": "k-opulent.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405589142150:android:c93c63765d2c5c30f23f07",
+        "android_client_info": {
+          "package_name": "com.kartikeyraghav.opulent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405589142150-gmrd4mach8idj02gicvv2lagp8dslsi5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kartikeyraghav.opulent",
+            "certificate_hash": "80e7e59712ad217a478788f1aa70dde8171e43aa"
+          }
+        },
+        {
+          "client_id": "405589142150-6ter1qm84qjnf3aib5uvemlfjc5bo6fm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxqpgj7aq5wHiHnwGfnrEoEETS-sUpkjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405589142150-6ter1qm84qjnf3aib5uvemlfjc5bo6fm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "405589142150-alhtlb6hq9uto8hng52kaqp3lfinumbc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kartikeyraghav.opulent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

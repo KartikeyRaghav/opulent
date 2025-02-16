@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:opulent/common/widgets/appbar/appbar.dart';
 import 'package:opulent/common/widgets/brand/brand_card.dart';
 import 'package:opulent/common/widgets/layout/grid_layout.dart';
-import 'package:opulent/common/widgets/products/sortable/sortable_products.dart';
 import 'package:opulent/common/widgets/texts/section_heading.dart';
 import 'package:opulent/features/shop/screens/brands/brand_products.dart';
 import 'package:opulent/utils/constants/sizes.dart';

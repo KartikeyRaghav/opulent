@@ -1,5 +1,5 @@
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:opulent/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:opulent/utils/constants/colors.dart';
 import 'package:opulent/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +13,14 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: OpulentAppTheme.lightTheme,
       darkTheme: OpulentAppTheme.darkTheme,
-      home: OnBoardingScreen(),
+      home: Scaffold(
+        backgroundColor: OpulentColors.primary,
+        body: Center(
+          child: CircularProgressIndicator(
+            color: Colors.white,
+          ),
+        ),
+      ),
     );
   }
 }
