@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:opulent/common/widgets/appbar/appbar.dart';
 import 'package:opulent/common/widgets/appbar/tabbar.dart';
 import 'package:opulent/common/widgets/custom_shapes/containers/search_container.dart';
@@ -6,6 +7,7 @@ import 'package:opulent/common/widgets/layout/grid_layout.dart';
 import 'package:opulent/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:opulent/common/widgets/texts/section_heading.dart';
 import 'package:opulent/common/widgets/brand/brand_card.dart';
+import 'package:opulent/features/shop/screens/brands/all_brands.dart';
 import 'package:opulent/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:opulent/utils/constants/colors.dart';
 import 'package:opulent/utils/constants/sizes.dart';
@@ -52,7 +54,7 @@ class StoreScreen extends StatelessWidget {
                       SizedBox(height: OpulentSizes.spaceBtwSections),
                       OpulentSectionHeading(
                         title: 'Featured Brands',
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => AllBrandsScreen()),
                       ),
                       SizedBox(height: OpulentSizes.spaceBtwItems / 1.5),
                       OpulentGridLayout(
