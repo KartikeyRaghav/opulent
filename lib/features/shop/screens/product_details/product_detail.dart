@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:opulent/common/widgets/texts/section_heading.dart';
 import 'package:opulent/features/shop/screens/product_details/widgets/bottom_add_to_cart.dart';
@@ -6,6 +7,7 @@ import 'package:opulent/features/shop/screens/product_details/widgets/product_at
 import 'package:opulent/features/shop/screens/product_details/widgets/product_detail_image_slider.dart';
 import 'package:opulent/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:opulent/features/shop/screens/product_details/widgets/rating_share.dart';
+import 'package:opulent/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:opulent/utils/constants/sizes.dart';
 import 'package:readmore/readmore.dart';
 
@@ -68,10 +70,9 @@ class ProductDetailScreen extends StatelessWidget {
                       OpulentSectionHeading(
                         title: 'Reviews(199)',
                         showActionButton: false,
-                        onPressed: () {},
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => ProductReviewsScreen()),
                         icon: Icon(
                           Iconsax.arrow_right_3,
                           size: 18,
