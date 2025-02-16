@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:opulent/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:opulent/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:opulent/common/widgets/layout/grid_layout.dart';
 import 'package:opulent/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:opulent/common/widgets/texts/section_heading.dart';
+import 'package:opulent/features/shop/screens/all_products/all_products.dart';
 import 'package:opulent/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:opulent/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:opulent/features/shop/screens/home/widgets/promo_slider.dart';
@@ -57,7 +59,10 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: OpulentSizes.spaceBtwSections),
-                  OpulentSectionHeading(title: 'Popular Products', onPressed: (){},),
+                  OpulentSectionHeading(
+                    title: 'Popular Products',
+                    onPressed: () => Get.to(() => AllProducts()),
+                  ),
                   SizedBox(height: OpulentSizes.spaceBtwSections),
                   OpulentGridLayout(
                     itemCount: 4,
