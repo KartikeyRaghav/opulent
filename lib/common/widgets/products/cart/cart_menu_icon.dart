@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:opulent/features/shop/screens/cart/cart.dart';
 import 'package:opulent/utils/constants/colors.dart';
 import 'package:opulent/utils/helpers/helper_functions.dart';
 
@@ -20,7 +22,7 @@ class OpulentCartCounterIcon extends StatelessWidget {
     return Stack(
       children: [
         IconButton(
-          onPressed: onPressed,
+          onPressed: () => Get.to(() => CartScreen()),
           icon: Icon(
             Iconsax.shopping_bag,
             color:

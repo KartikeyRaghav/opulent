@@ -116,17 +116,17 @@ class OpulentProductAttributes extends StatelessWidget {
               spacing: 8,
               children: [
                 OpulentChoiceChip(
-                  text: 'EU 8',
+                  text: 'UK 8',
                   selected: true,
                   onSelected: (value) {},
                 ),
                 OpulentChoiceChip(
-                  text: 'EU 9',
+                  text: 'UK 9',
                   selected: false,
                   onSelected: (value) {},
                 ),
                 OpulentChoiceChip(
-                  text: 'EU 10',
+                  text: 'UK 10',
                   selected: false,
                   onSelected: (value) {},
                 ),
