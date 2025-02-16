@@ -34,29 +34,15 @@ Opulent is a beautifully designed e-commerce application built using Flutter. Th
 
 ## Screenshots
 
-- ![image](/screenshots/Screenshot_2025-02-16-23-49-19-799_com.kartikeyraghav.opulent.jpg)
+Screenshots have been added in the screenshot folder. Some of them are shown below
+
 - ![image](/screenshots/Screenshot_2025-02-16-23-47-45-232_com.kartikeyraghav.opulent.jpg)
 - ![image](/screenshots/Screenshot_2025-02-16-23-47-49-856_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-47-58-484_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-48-01-204_com.kartikeyraghav.opulent.jpg)
 - ![image](/screenshots/Screenshot_2025-02-16-23-48-12-086_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-48-14-814_com.kartikeyraghav.opulent.jpg)
 - ![image](/screenshots/Screenshot_2025-02-16-23-48-21-552_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-48-24-061_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-48-33-023_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-48-37-612_com.kartikeyraghav.opulent.jpg)
 - ![image](/screenshots/Screenshot_2025-02-16-23-48-41-184_com.kartikeyraghav.opulent.jpg)
 - ![image](/screenshots/Screenshot_2025-02-16-23-48-43-943_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-48-46-755_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-48-49-145_com.kartikeyraghav.opulent.jpg)
 - ![image](/screenshots/Screenshot_2025-02-16-23-48-55-190_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-48-58-329_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-49-01-044_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-49-05-445_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-49-09-095_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-49-11-468_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-49-13-361_com.kartikeyraghav.opulent.jpg)
-- ![image](/screenshots/Screenshot_2025-02-16-23-49-15-552_com.kartikeyraghav.opulent.jpg)
 
 ## Future Enhancements
 
