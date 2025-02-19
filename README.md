@@ -17,6 +17,7 @@ Opulent is a beautifully designed e-commerce application built using Flutter. Th
 
 - Flutter - For cross platform UI development using the same code.
   Different add-on like cupertino_icons, iconsax, etc have been used for better UI.
+- Firebase - Firebase has been used to provide auth functionality(Not yet completed) and to fetch data from the firebase to the app in future.
 
 ## Folder Structure
 
