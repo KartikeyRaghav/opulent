@@ -15,8 +15,17 @@ Opulent is a beautifully designed e-commerce application built using Flutter. Th
 
 ## Tech Stack
 
-- Flutter - Cross-platform UI development.
-- Dart - Programming language for Flutter.
+- Flutter - For cross platform UI development using the same code.
+  Different add-on like cupertino_icons, iconsax, etc have been used for better UI.
+
+## Folder Structure
+
+The app follows a folder structure.
+- All the images have been added in the assets folder. There are sub-folders in the assets folder based on the categories of images.
+- The lib folder contains all the code. There are sub-folders for better placement of code.
+  - The widgets common to some screens have been placed in the common folder.
+  - The features folder contains different screens.
+  - The utils folder contains theme of the app, all constant and other utility items and functions.
 
 ## Installation
 
